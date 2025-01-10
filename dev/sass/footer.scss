@@ -1,7 +1,13 @@
-footer{
-    height: 100px;
-    background: $secondary-color;
+footer {
+    color: $primary-color;
+    background-color: $light-gray;
+    padding: 18px 0 20px;
     margin-top: auto;
 }
-
  
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

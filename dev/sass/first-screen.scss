@@ -1,3 +1,69 @@
-h1 {
-    color: blue;
+.banner {
+
+    > .container {
+        display: flex;
+    }
+
+    &-title {
+        font-weight: 900;
+        font-family: $font-primary;
+        color: $primary-color;
+        line-height: 1.5;
+        width: 100%;
+        margin-top: 504px;
+        z-index: 10;
+        margin-left: 180px;
+        max-width: 436px;
+        padding-bottom: 64px;
+        text-transform: uppercase;
+
+        span {
+            background-color: $accent-color;
+            color: $bg-color;
+            width: 100%;
+        }
+    }
+
+    &-video {
+        max-width: 690px;
+        width: 100%;
+        background: url(assets/img/banner-bg.png) no-repeat center;
+        background-size: cover;
+        margin-left: -214px;
+    }
+
+    &-nav {
+        position: relative;
+        padding-top: 230px;
+        padding-left: 46px;
+        color: $bg-color;
+        text-transform: uppercase;
+
+        &-title {
+            font-weight: 700;
+            margin-bottom: 8px;
+            display: inline-block;
+            max-width: 90px;
+        }
+
+        li {
+            font-family: $font-secondary;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            padding-left: 10px;
+        }
+        
+        &::after {
+            content: "";
+            position: absolute;
+            width: 274px;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: $primary-color;
+            z-index: -1;
+        }
+    }
 }

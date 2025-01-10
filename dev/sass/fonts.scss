@@ -5,3 +5,60 @@
     font-style: normal;
     font-display: swap;
 }
+
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./assets/font/Montserrat-SemiBold.ttf') format('TrueType');
+    font-weight: 600; 
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('.assets/font/Montserrat-Black.ttf') format('TrueType');
+    font-weight: 900; 
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./assets/font/Montserrat-ExtraBold.ttf') format('TrueType');
+    font-weight: 800; 
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('./assets/font/Nunito-Regular.ttf') format('TrueType');
+    font-weight: 400; 
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('./assets/font/Nunito-LightItalic.ttf') format('TrueType');
+    font-weight: 300; 
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('./assets/font/Nunito-Bold.ttf') format('TrueType');
+    font-weight: 700; 
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('./assets/font/Nunito-SemiBold.ttf') format('TrueType');
+    font-weight: 700; 
+    font-style: normal;
+    font-display: swap;
+}
