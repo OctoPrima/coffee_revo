@@ -1,0 +1,98 @@
+.personalized {
+
+    > .container {
+        position: relative;
+        overflow: hidden;
+        padding-bottom: 128px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 326px;
+            background-color: $primary-color;
+        }
+    }
+
+    &-section-title {
+        padding-top: 88px;
+    }
+
+    &-coffee-swiper {
+        padding: 0 128px;
+        overflow: visible;
+
+        .swiper-slide-prev,
+        .swiper-slide-next + * + * {
+            opacity: .5;
+            transition: .3s;
+        }
+
+        .swiper-slide {
+            transition: .3s;
+        }
+
+        .swiper-button-next:after {
+            right: 58px;
+        }
+        
+        .swiper-button-prev:after {
+            left: 58px;
+        }
+
+    }
+
+    &-coffee-slide {
+        display: flex;
+        flex-direction: column;
+        min-width: 360px;
+        background-color: $bg-product;
+
+        img {
+            width: 100%;
+            height: 300px;
+        }
+    }
+
+    &-coffee-details {
+        padding: 42px;
+        font-family: $font-secondary;
+        line-height: 1.6;
+        color: $primary-color;
+    }
+
+    &-coffee-price {
+        color: $accent-color;
+        font-weight: 600;
+        display: flex;
+        gap: 6px;
+        font-size: 20px;
+        align-items: center;
+
+        span {
+            font-family: $font-italic;
+            font-weight: 300;
+            font-size: 14px;
+            text-decoration: line-through;
+            margin-bottom: 10px;
+            color: $primary-color;
+        }
+    }
+
+    &-coffee__name{
+        font-weight: 700;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    &-coffee__info {
+        font-weight: 300;
+        font-size: 16px;
+        height: 44px;
+        overflow: auto;
+        margin-bottom: 32px;
+        line-height: 1.2;
+    }
+}

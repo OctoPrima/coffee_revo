@@ -1,0 +1,37 @@
+.personalized-coffee {
+    padding: 0 148px;
+    margin-bottom: 128px;
+    
+    &__services {
+        display: flex;
+        justify-content: space-between;
+        gap: 68px;
+    }
+
+    &__possibility {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 226px;
+        width: 100%;
+        padding: 6px 0;
+        color: $primary-color;
+        font-family: $font-secondary;
+
+        &--img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 40px;
+        }
+
+        &--title {
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        &--info {
+            text-align: center;
+        }
+    }
+}

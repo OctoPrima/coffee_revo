@@ -18,6 +18,23 @@ body {
     height: 100vh;
 }
 
+.section-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    color: $primary-color;
+    line-height: 1.1;
+    margin-bottom: 72px;
+    text-transform: uppercase;
+
+    .section-subtitle {
+        margin-bottom: 8px;
+        text-transform: capitalize;
+    }
+}
+
 h1 {
     font-size: 54px;
     font-family: $font-primary;
@@ -46,4 +63,62 @@ h5 {
 h6 {
     font-size: 16px;
     font-family: $font-secondary;
+}
+
+.btn {
+    padding: 6px 16px;
+    text-transform: uppercase;
+    background-color: $accent-color;
+    color: $bg-color;
+    border-radius: 20px;
+    border: none;
+}
+
+.swiper-button-next.swiper-button-disabled,
+.swiper-button-prev.swiper-button-disabled {
+    opacity: 0;
+    transition: .3s;
+}
+
+.swiper-button-prev, 
+.swiper-button-next {
+    transition: .3s;
+}
+
+.swiper-button-next:after, 
+.swiper-button-prev:after {
+    content: "";
+    min-width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.swiper-button-next:after {
+    background: url(assets/img/arrow-next.svg) $accent-color;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.swiper-button-prev:after {
+    background: url(assets/img/arrow-prev.svg) $accent-color;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.d-none {
+    display: none;
+}
+
+.active {
+    display: flex;
+}
+
+
+.button-product {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
 }
